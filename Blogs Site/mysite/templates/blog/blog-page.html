@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block title %}Blog Page{% endblock title %}
+
+{% block body %}
+
+<div class="blog-post">
+        <h1 class="blog-post-title" style="text-align: center">{{post.title}}</h1>
+        <p class="blog-post-meta">{{post.timestamp}} <a href="#">{{post.author}}</a></p>
+        {{post.content}}
+
+{% endblock body %}
